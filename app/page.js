@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import Header from "@/Components/Header";
 import DeleteSharpIcon from "@mui/icons-material/DeleteSharp";
 import EditSharpIcon from "@mui/icons-material/EditSharp";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FilePresentIcon from "@mui/icons-material/FilePresent";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 const page = () => {
     const [allTasks, setAllTasks] = useState([]);
     const [title, setTitle] = useState("");
@@ -53,7 +57,12 @@ const page = () => {
                                 Add
                             </button>
                         </form>
-                        <div className="h-20 bg-slate-900 text-white text-center">Contact Information</div>
+                        <div className="h-20 bg-slate-900 text-white ">
+                            <div className="text-center py-1">Contact Information</div>
+                            <div className="flex justify-center gap-10">
+                                <InstagramIcon /> <LinkedInIcon /> <FilePresentIcon /> <AlternateEmailIcon />
+                            </div>
+                        </div>
                     </div>
                     <div className="w-1/2  border-s border-slate-400">
                         <div>
