@@ -59,7 +59,7 @@ const page = () => {
                         </form>
                         <div className="h-20 bg-slate-900 text-white ">
                             <div className="text-center py-1">Contact Information</div>
-                            <div className="flex justify-center gap-10">
+                            <div className="flex justify-center gap-10 py-2">
                                 <InstagramIcon /> <LinkedInIcon /> <FilePresentIcon /> <AlternateEmailIcon />
                             </div>
                         </div>
