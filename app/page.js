@@ -11,7 +11,11 @@ const page = () => {
     const [allTasks, setAllTasks] = useState([]);
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
+        const response = await fetch("../api/addTask.js", {
+            method: "POST",
+        });
+        console.log(response.message);
         setAllTasks([...allTasks, { title, description }]);
     };
     const handleEdit = (title) => {
